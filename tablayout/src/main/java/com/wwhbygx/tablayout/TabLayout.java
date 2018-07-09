@@ -2043,7 +2043,7 @@ public class TabLayout extends HorizontalScrollView {
                     canvas.drawRect(mIndicatorLeft, getHeight() - mSelectedIndicatorHeight,
                             mIndicatorRight, getHeight(), mSelectedIndicatorPaint);
                 } else {//如果设置了宽度  则计算左侧开始绘制的偏移量
-                    int left = (mIndicatorRight - mIndicatorLeft) / 2 - (mSelectedIndicatorWidth / 2) + mIndicatorLeft
+                    int left = (mIndicatorRight - mIndicatorLeft) / 2 - (mSelectedIndicatorWidth / 2) + mIndicatorLeft;
                     canvas.drawRect(left, getHeight() - mSelectedIndicatorHeight,
                             left + mSelectedIndicatorWidth, getHeight(), mSelectedIndicatorPaint);
                 }
